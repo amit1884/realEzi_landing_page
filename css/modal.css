@@ -1,0 +1,50 @@
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal-card {
+  background-color: #ebf0ff;
+  min-width: 400px;
+  min-height: 400px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px lightgray;
+  position: relative;
+  padding: 30px;
+}
+.form {
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 10px;
+}
+.input-container {
+  border-bottom: 1px solid gray;
+}
+.form div input {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: none;
+}
+.form-btn {
+  border-radius: 40px;
+  background-color: #d9d9d9;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.form-active-btn {
+  background-color: #100f3f;
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,29 @@
+.explore-section{
+    margin:100px auto;
+}
+.explore-left p{
+font-size: 42px;
+font-weight: 500;
+}
+.explore-right p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.explore-card{
+    min-height: 250px;
+}
+.explore-card-heading{
+    font-size: 30px;
+    font-weight: 600;
+    width:90%;
+}
+.explore-card-heading{
+font-size: 20px;
+margin:40px auto;
+width:90%;
+}
+@media(max-width:991px){
+    .explore-section{
+        margin:20px auto !important;
+    }
+}
