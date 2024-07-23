@@ -5,7 +5,7 @@
   font-size: 28px;
   font-weight: 600;
   padding-left: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .tabs-container {
   display: flex;
@@ -16,12 +16,15 @@
 .tab-header {
   display: flex;
   background-color: #f7f9ff;
-  padding: 10px;
+  padding: 0 10px;
   border-radius: 5px;
-  margin: 20px;
+  margin: 0 20px;
+  overflow: hidden;
 }
 .tab-header div {
-  margin: 5px 20px;
+  margin: 0 20px;
+  padding: 10px;
+  cursor: pointer;
 }
 .tab-content {
   margin: 10px;
@@ -41,14 +44,44 @@
   font-size: 24px;
   font-weight: 600;
   margin: 40px auto;
-  width:100%;
+  width: 100%;
 }
 .legal-aid-card-btn {
-  margin-top:40px;
-  width:100%;
+  margin-top: 40px;
+  width: 100%;
 }
-.legal-aid-card-btn  button{
-    width:100%;
-    background-color:#94B9FF !important;
-    color:#100F3F !important;
+.legal-aid-card-btn button {
+  width: 100%;
+  background-color: #94b9ff !important;
+  color: #100f3f !important;
+}
+.leagal-aid-card-value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+.new-price {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.old-price {
+  font-size: 20px;
+  text-decoration: line-through;
+  text-align: center;
+}
+.active-tab {
+  border-bottom: 2px solid #100f3f;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+@media (max-width: 991px) {
+  .tabs-container {
+    padding-left: 10px !important;
+  }
 }

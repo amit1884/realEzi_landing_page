@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/legal-aid.css" />
     <link rel="stylesheet" href="./css/banner.css" />
     <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <div class="top-nav">
@@ -71,6 +72,7 @@
         </div>
       </div>
     </nav>
+    <!-- Hero Section -->
     <section class="hero-section container">
       <div class="row">
         <div class="col-md-6 col-12">
@@ -108,12 +110,13 @@
         </div>
         <div class="col-md-6 col-12">
           <div class="image-area d-flex">
-            <img src="./assets/hero-2.png" alt="" />
-            <img src="./assets/hero-1.png" alt="" />
+            <img src="./assets/hero-2.png" alt="" class="left-img" />
+            <img src="./assets/hero-1.png" alt="" class="right-img" />
           </div>
         </div>
       </div>
     </section>
+    <!-- Service Section -->
     <section class="services-section">
       <div class="container">
         <div class="services-heading">
@@ -129,7 +132,9 @@
                   exceptional customer service, we bring your dreams to life.
                 </div>
                 <div class="card-arrow">
-                  <img src="./assets/arrow.png" alt="" />
+                  <a href="#legal_document_review"
+                    ><img src="./assets/arrow.png" alt=""
+                  /></a>
                 </div>
               </div>
               <div class="top-bottom-content">
@@ -150,7 +155,9 @@
                   your vision.
                 </div>
                 <div class="card-arrow">
-                  <img src="./assets/arrow.png" alt="" />
+                  <a href="#legal_power_of_attorny"
+                    ><img src="./assets/arrow.png" alt=""
+                  /></a>
                 </div>
               </div>
               <div class="top-bottom-content">
@@ -170,7 +177,9 @@
                   designs for interiors of your homes.
                 </div>
                 <div class="card-arrow">
-                  <img src="./assets/arrow.png" alt="" />
+                  <a href="#project_monitoring_report"
+                    ><img src="./assets/arrow.png" alt=""
+                  /></a>
                 </div>
               </div>
               <div class="top-bottom-content">
@@ -184,6 +193,7 @@
         </div>
       </div>
     </section>
+    <!-- Explore Section -->
     <section class="explore-section">
       <div class="container">
         <div class="row content-center">
@@ -258,13 +268,13 @@
             <div class="legal-aid-heading">Legal Aids with REALEZI</div>
           </div>
         </div>
-        <div class="row content-center mt-5">
+        <div class="row content-center">
           <div class="tabs-container">
             <div class="tab-header">
-              <div>Litigation Services</div>
-              <div>Monitoring and Valuation</div>
+              <div class="active-tab" id="tab1">Litigation Services</div>
+              <div id="tab2">Monitoring and Valuation</div>
             </div>
-            <div class="tab-content tab-content-1">
+            <div class="tab-content tab-content-1 show" id="tab-content-1">
               <div class="row">
                 <div class="col-md-6 col-12">
                   <div class="legal-aid-card">
@@ -276,14 +286,197 @@
                     <div class="leagal-aid-card-content">
                       A legal contract between a lessor and lessee Constitutes
                       all requisites when a lessor engages with a lessee Allows
-                      the lessee to rent a property for a certain period
+                      the lessee to rent a property for a certain period.
                     </div>
                     <div class="legal-aid-card-btn">
                       <button class="btn-primary">Book Now</button>
                     </div>
-                    <div class="leagal-aid-card-value"></div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">FREE</div>
+                      <div class="old-price">$4250</div>
+                    </div>
                   </div>
                 </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card">
+                    <div class="leagal-aid-card-header">
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Sale Agreement</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Includes all the regulations about the sale of a property
+                      Executed by a developer or a seller Constitutes all
+                      financial terms.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">$2500</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card" id="legal_power_of_attorny">
+                    <div class="leagal-aid-card-header">
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Legal Power of Attorney</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Gives an attorney-in-charge the authority to act for
+                      specific rights Issued for consideration or interest for a
+                      fixed period of time. Incompetent to eliminate the lack of
+                      payment capacity.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">$2500</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card">
+                    <div
+                      class="leagal-aid-card-header"
+                      id="legal_document_review"
+                    >
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Legal Document Review</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Recommended for property buyers Legal documents are
+                      reviewed by an in -house expert Analyses property
+                      documents and compliance issues.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">FREE</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card">
+                    <div class="leagal-aid-card-header">
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Property Complaints</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Includes assessment of the complaint and the best route to
+                      take Sends legal letter to the Developer / Seller for
+                      refunds / Settlement Files case in appropriate courts -
+                      RERA, Consumer, NCLT, Arbitration.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">$2500</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card">
+                    <div
+                      class="leagal-aid-card-header"
+                      id="project_monitoring_report"
+                    >
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Project Monitoring Report</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Meant especially for under-construction projects Tracks
+                      the developments and recent transactions Includes legal
+                      permissions and litigation queries.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">FREE</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card">
+                    <div class="leagal-aid-card-header">
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Comprehensive Due Diligence</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Analyses the property documents and compliance issues
+                      Verifies title search and mortgage checks Used for
+                      property valuation reports and verifying documents.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">$2500</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card">
+                    <div class="leagal-aid-card-header">
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Title Search</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Determines Various facets of a property history Helps In
+                      assessing the present titleholder Examines public records
+                      to confirm ownership of property.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">$2500</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="legal-aid-card">
+                    <div class="leagal-aid-card-header">
+                      <div><img src="./assets/check-list 3.png" alt="" /></div>
+                      <br />
+                      <div>Litigation Search</div>
+                    </div>
+                    <div class="leagal-aid-card-content">
+                      Refers to actions contested in court Investigates charges
+                      levied on property sellers Deals with active, pending and
+                      disposed off cases.
+                    </div>
+                    <div class="legal-aid-card-btn">
+                      <button class="btn-primary">Book Now</button>
+                    </div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">$2500</div>
+                      <div class="old-price">$4250</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content tab-content-2" id="tab-content-2">
+              <div class="row">
                 <div class="col-md-6 col-12">
                   <div class="legal-aid-card">
                     <div class="leagal-aid-card-header">
@@ -294,12 +487,15 @@
                     <div class="leagal-aid-card-content">
                       A legal contract between a lessor and lessee Constitutes
                       all requisites when a lessor engages with a lessee Allows
-                      the lessee to rent a property for a certain period
+                      the lessee to rent a property for a certain period.
                     </div>
                     <div class="legal-aid-card-btn">
                       <button class="btn-primary">Book Now</button>
                     </div>
-                    <div class="leagal-aid-card-value"></div>
+                    <div class="leagal-aid-card-value">
+                      <div class="new-price">FREE</div>
+                      <div class="old-price">$4250</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -308,6 +504,7 @@
         </div>
       </div>
     </section>
+    <!-- Banner Section -->
     <section class="banner-section">
       <div class="banner-main">
         <div class="row">
@@ -326,10 +523,10 @@
                 to safeguard your investments and rights.
               </div>
               <div class="btn-container">
-                <button class="btn-primary hero-primary-btn">
+                <button class="btn-primary hero-primary-btn banner-btn">
                   Explore our expertise
                 </button>
-                <button class="btn-secondary hero-secondary-btn">
+                <button class="btn-secondary hero-secondary-btn banner-btn">
                   Free Consultation
                   <span class="arrow-img"
                     ><img src="./assets/arrow.png" alt=""
@@ -341,8 +538,147 @@
         </div>
       </div>
     </section>
-    <div class="common-banner-text">Realezi banner download app</div>
+    <!-- Common Banner -->
 
+    <div class="common-banner-text">Realezi banner download app</div>
+    <!-- Footer Section -->
+    <!-- Top Footer -->
+    <div class="top-footer">
+      <div class="container">
+        <div class="row content-center">
+          <div class="col-md-3 col-6">
+            <div class="menu-group">
+              <div class="menu-title">Community</div>
+              <br />
+              <div class="menu-item">Builders</div>
+              <div class="menu-item">Vendors</div>
+              <div class="menu-item">Cutomers</div>
+              <br />
+              <div class="menu-button">
+                <button class="btn-primary footer-btn">
+                  Refer & Earn
+                  <span style="margin-left: 7px"
+                    ><img src="./assets/fire.png" alt=""
+                  /></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="menu-group">
+              <div class="menu-title">Solution</div>
+              <br />
+              <div class="menu-item">Find a right property</div>
+              <div class="menu-item">Sell your property</div>
+              <div class="menu-item">Build your home from scratch</div>
+              <div class="menu-item">Interior Designing & Decor</div>
+              <div class="menu-item">Solar Panel</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="menu-group">
+              <div class="menu-title"></div>
+              <br />
+              <div class="menu-item">Bank Loans</div>
+              <div class="menu-item">Legal Aid</div>
+              <div class="menu-item">Porter Services</div>
+              <div class="menu-item">For Builders & Channel Partners</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="menu-group">
+              <div class="menu-title">Company</div>
+              <br />
+              <div class="menu-item">About Us</div>
+              <div class="menu-item">Blog</div>
+              <div class="menu-item">Contact support</div>
+              <div class="menu-item">FAQs</div>
+              <br />
+              <br />
+              <div class="menu-button">
+                <button class="btn-primary footer-btn">
+                  We are hiring
+                  <span style="margin-left: 7px"
+                    ><img src="./assets/party-popper 1.png" alt=""
+                  /></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="subscribe-content">Subscribe to our newsletter</div>
+        </div>
+      </div>
+    </div>
+    <!--Bottom footer  -->
+    <div class="bottom-footer">
+      <div class="container">
+        <div class="row content-center">
+          <div class="col-md-4 col-12">
+            <div class="left-content">
+              <div class="footer-title">About Us</div>
+              <div class="about-us-desc">
+                Join our referral program and earn rewards for every friend you
+                bring to our design family. Share the joy of transforming spaces
+                togetherJoin our referral program and earn rewards for every
+                friend you bring to our design family.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 col-12"></div>
+          <div class="col-md-5 col-12">
+            <div class="right-content">
+              <div class="footer-title">EXPERIENCE REALEZI APP ON MOBILE</div>
+              <div class="app-btn-container d-flex">
+                <div class="app-btn">
+                  <img src="./assets/app-store.png" alt="" />
+                </div>
+                <div class="app-btn">
+                  <img src="./assets/google-play.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="company-logo">
+              <img src="/assets/footer_logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-5 col-12">
+            <div class="menus">
+              <div class="menu-item">Privacy Policy</div>
+              <div class="menu-item">Terms and conditions</div>
+              <div class="menu-item">Disclaimer</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="social-container">
+              <div class="social-icons">
+                <img src="assets/facebook.png" alt="" />
+              </div>
+              <div class="social-icons">
+                <img src="assets/linkedin.png" alt="" />
+              </div>
+              <div class="social-icons">
+                <img src="assets/instagram.png" alt="" />
+              </div>
+              <div class="social-icons">
+                <img src="assets/youtube.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="credit-section">
+      <div class="container p-4">
+        <div class="row content-center">©2024 Realezi. All rights reserved</div>
+      </div>
+    </div>
     <!-- Form Modal -->
     <div class="modal-overlay hide" id="myModal">
       <div class="modal-card">

@@ -3,6 +3,7 @@
   overflow-x: hidden;
   box-sizing: border-box;
   color: #100f3f;
+  scroll-behavior: smooth;
 }
 .content-center {
   display: flex;
@@ -23,4 +24,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media(max-width:991px){
+  .br-right {
+    border-right: none !important;
+  }
 }

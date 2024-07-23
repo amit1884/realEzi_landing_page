@@ -1,0 +1,90 @@
+.top-footer {
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #100f3f;
+}
+.menu-group .menu-title {
+  font-size: 32px;
+  font-weight: 500;
+  height: 70px;
+}
+
+.subscribe-content {
+  font-size: 20px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+
+.bottom-footer {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #100f3f;
+}
+.footer-title {
+  font-size: 28px;
+  font-weight: 550;
+  margin-bottom: 50px;
+}
+.right-content {
+  padding-left: 50px;
+}
+.app-btn-container {
+  justify-content: flex-start;
+}
+.app-btn {
+  margin-right: 20px;
+}
+.company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.menus {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+  align-items: center;
+}
+.social-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
+@media (max-width: 991px) {
+  .top-footer {
+    padding-top: 50px;
+    padding-left: 10px !important;
+    padding-bottom: 50px;
+  }
+  .subscribe-content {
+    text-align: center;
+  }
+  .right-content {
+    padding-left: 0 !important;
+    margin-top: 20px;
+  }
+  .app-btn-container {
+    justify-content: center !important;
+    margin-bottom: 20px;
+  }
+  .footer-btn {
+    font-size: 12px !important;
+  }
+  .menu-group .menu-title {
+    font-size: 28px !important;
+  }
+  .company-logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .social-container,
+  .menus {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+}
